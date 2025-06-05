@@ -1,0 +1,22 @@
+.home-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #eee;
+    padding: 1rem;
+}
+
+.main {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
