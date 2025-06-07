@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "1749327598469",
+    "nick": "pixel-penguin",
+    "content": "My current setup. Thoughts?",
+    "time": 1749327598469,
+    "category": "Rice Showcase",
+    "image": "/uploads/1749327598467.jpg"
+  },
+  {
+    "id": "1749327689249",
+    "nick": "glitchy-nOOdle",
+    "content": "I want to download Linux but I don't know how... I have always ran Windows and I'm honestly kind of tired of it and want a change. After careful consideration and lots of research, I've decided I want to switch to Linux for several reasons. For example, it's safer, easier to use and from what I can tell, less clunky. The only problem is, is that I don't know how. If someone can assist me I would be very grateful. Thanks! ",
+    "time": 1749327689249,
+    "category": "Install Help",
+    "image": null
+  },
+  {
+    "id": "1749327837142",
+    "nick": "terminalito",
+    "content": "I updated arch 2 days ago. I use i3wm. My terminal does not work, chromium does not work but firefox works. I even changed window managers but this issue persists.\r\nPlease help.\r\nThank you. ",
+    "time": 1749327837142,
+    "category": "Troubleshooting",
+    "image": null
+  },
+  {
+    "id": "1749328096799",
+    "nick": "annnie",
+    "content": "Linux is NOT user friendly",
+    "time": 1749328096799,
+    "category": "Offtopic",
+    "image": "/uploads/1749328096798.png"
+  }
+]

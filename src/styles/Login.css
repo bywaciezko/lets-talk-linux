@@ -1,0 +1,63 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bfa58b; /* jasny krem/brąz */
+}
+
+.login-box {
+    background: #6b4c3b; /* ciemny brąz */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(101, 73, 44, 0.3); /* miękki cień w brązie */
+    text-align: center;
+    width: 320px;
+    color: #f3ede3; /* jasny kremowy tekst */
+}
+
+.login-input {
+    width: 90%;
+    padding: 0.6rem;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid #a88a6e;
+    font-size: 1rem;
+    display: block;
+    background-color: #f3ede3; /* jasne tło */
+    color: #6b4c3b; /* ciemny tekst */
+}
+
+.login-button,
+.back-button {
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem 0.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-button {
+    background-color: #bfa58b; /* kremowy */
+    color: #6b4c3b;
+}
+
+.login-button:hover {
+    background-color: #a68e6a;
+}
+
+.back-button {
+    background-color: #e6d9c8; /* bardzo jasny krem */
+    color: #6b4c3b;
+}
+
+.back-button:hover {
+    background-color: #d3c3aa;
+}
+
+.login-error {
+    margin-top: 1rem;
+    color: #a94442; /* łagodniejsza czerwień */
+}

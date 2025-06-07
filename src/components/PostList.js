@@ -16,17 +16,19 @@ export default function PostList({ refresh, selectedCategory, user }) {
             : posts.filter((p) => p.category === selectedCategory);
 
     return (
-        <div>
+        <div className="post-list">
             {filteredPosts.map((p) => (
-                <div key={p.id}>
-                    <strong>{p.nick}</strong> (
-                    {new Date(p.time).toLocaleString()}) [{p.category}]
-                    <p>{p.content}</p>
+                <div className="post-box" key={p.id}>
+                    <div className="post-meta">
+                        <strong>{p.nick}</strong> (
+                        {new Date(p.time).toLocaleString()}) [{p.category}]
+                    </div>
+                    <p className="post-content">{p.content}</p>
                     {p.image && (
                         <img
                             src={`http://localhost:5000${p.image}`}
-                            alt="Post image"
-                            style={{ maxWidth: "100%" }}
+                            alt=""
+                            className="post-image"
                         />
                     )}
                     <Comments postId={p.id} user={user} />

@@ -24,26 +24,37 @@ export default function Register({ onRegister, onBack }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                placeholder="Name"
-                value={nick}
-                onChange={(e) => setNick(e.target.value)}
-                required
-            />
-            <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-            />
-            <button>Register</button>
-            {error && <div style={{ color: "red" }}>{error}</div>}
+        <form onSubmit={handleSubmit} className="login-container">
+            <div className="login-box">
+                <h2 className="element">Sign up</h2>
 
-            <button type="button" onClick={onBack}>
-                Go back
-            </button>
+                <input
+                    className="login-input"
+                    placeholder="Name"
+                    value={nick}
+                    onChange={(e) => setNick(e.target.value)}
+                    required
+                />
+
+                <input
+                    className="login-input"
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                />
+
+                <button className="login-button" type="submit">
+                    Register
+                </button>
+
+                {error && <div className="login-error">{error}</div>}
+
+                <button className="back-button" type="button" onClick={onBack}>
+                    Go back
+                </button>
+            </div>
         </form>
     );
 }

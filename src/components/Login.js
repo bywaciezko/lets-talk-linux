@@ -1,3 +1,4 @@
+import "../styles/Login.css";
 import { useState } from "react";
 
 export default function Login({ onLogin, onBack }) {
@@ -24,26 +25,37 @@ export default function Login({ onLogin, onBack }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                placeholder="Name"
-                value={nick}
-                onChange={(e) => setNick(e.target.value)}
-                required
-            />
-            <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-            />
-            <button>Log in</button>
+        <form onSubmit={handleSubmit} className="login-container">
+            <div className="login-box">
+                <h2 className="element">Log in</h2>
 
-            {error && <div style={{ color: "red" }}>{error}</div>}
-            <button type="button" onClick={onBack}>
-                Go back
-            </button>
+                <input
+                    className="login-input"
+                    placeholder="Name"
+                    value={nick}
+                    onChange={(e) => setNick(e.target.value)}
+                    required
+                />
+
+                <input
+                    className="login-input"
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                />
+
+                <button className="login-button" type="submit">
+                    Log in
+                </button>
+
+                {error && <div className="login-error">{error}</div>}
+
+                <button className="back-button" type="button" onClick={onBack}>
+                    Go back
+                </button>
+            </div>
         </form>
     );
 }

@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "postId": "1749327598469",
+    "author": "glitchy-nOOdle",
+    "content": "so cool!!!!!",
+    "timestamp": 1749327629267
+  },
+  {
+    "postId": "1749327689249",
+    "author": "terminalito",
+    "content": "Totally get you! Switching from Windows to Linux can be a bit intimidating at first, but once you get the hang of it, it’s super smooth. I’d recommend checking out some YouTube tutorials on installing Linux step-by-step.",
+    "timestamp": 1749327765029
+  },
+  {
+    "postId": "1749327837142",
+    "author": "andrew-d",
+    "content": "Sounds like a weird update issue. Try booting into an older kernel from your GRUB menu and see if that fixes it.",
+    "timestamp": 1749327881650
+  },
+  {
+    "postId": "1749327689249",
+    "author": "andrew-d",
+    "content": "If you’re worried about losing Windows, you can do a dual boot setup so you can keep both OSes until you’re comfortable. I did that when I switched, made it way less stressful.",
+    "timestamp": 1749327897948
+  },
+  {
+    "postId": "1749327837142",
+    "author": "terminalito",
+    "content": "Thanks, Andrew! I haven’t tried that yet, but I’ll give it a shot and let you know if it helps. Never really messed with kernel options before, so this could be a learning moment.",
+    "timestamp": 1749327953170
+  },
+  {
+    "postId": "1749327837142",
+    "author": "andrew-d",
+    "content": "No worries! Just hit Shift or Esc during boot to access GRUB. Pick an older kernel and see if stuff works. If it does, you might want to hold off on the latest updates until there’s a fix. Good luck!",
+    "timestamp": 1749328002646
+  },
+  {
+    "postId": "1749328096799",
+    "author": "andrew-d",
+    "content": "seems like a skill-issue...",
+    "timestamp": 1749328128330
+  }
+]

@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+.element {
+    color: #f3ede3; /* krem */
+}
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bfa58b; /* jasny krem/brąz */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-box {
+    background-color: #6b4c3b; /* ciemny brąz */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(101, 73, 44, 0.25); /* miękki brązowy cień */
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-box button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    color: #6b4c3b; /* ciemny tekst */
+    background-color: #f3ede3; /* krem */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-box button:first-of-type {
+    background-color: #bfa58b; /* krem */
+    color: #6b4c3b;
 }
 
-.App-link {
-  color: #61dafb;
+.login-box button:first-of-type:hover {
+    background-color: #a68e6a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-box button:last-of-type {
+    background-color: #a67c52; /* cieplejszy brąz */
+    color: #f3ede3;
+}
+
+.login-box button:last-of-type:hover {
+    background-color: #8e6a3f;
 }

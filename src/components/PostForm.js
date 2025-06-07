@@ -26,11 +26,12 @@ export default function PostForm({ user, onPost, categories }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="post-form">
             <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
                 required
+                className="post-select"
             >
                 <option disabled hidden value="">
                     Choose category...
@@ -47,15 +48,17 @@ export default function PostForm({ user, onPost, categories }) {
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Write your post..."
                 required
+                className="post-textarea"
             />
 
             <input
                 type="file"
                 accept="image/*"
                 onChange={(e) => setImage(e.target.files[0])}
+                className="post-file"
             />
 
-            <button>Send</button>
+            <button className="action-button">Send</button>
         </form>
     );
 }

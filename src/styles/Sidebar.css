@@ -1,0 +1,58 @@
+.logo {
+    width: 120px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0.3rem auto;
+    overflow: hidden;
+    border: 1px solid #bfa58b; /* kremowy brąz */
+    background-color: #f3ede3; /* jasny krem */
+    display: block;
+    object-fit: cover;
+}
+
+.category-box {
+    width: 100%;
+    text-align: left;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    color: #6b4c3b; /* ciemny brąz */
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    color: #6b4c3b; /* ciemny brąz */
+}
+
+.category-item {
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.category-item:hover {
+    background-color: #d7c7b7; /* jasny brąz */
+}
+
+.category-item.active {
+    font-weight: 600;
+    background-color: #bfa58b; /* kremowy brąz */
+    color: #f3ede3; /* jasny krem */
+}
+
+.category-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.category-input {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bfa58b; /* kremowy brąz */
+    background-color: #f3ede3; /* jasny krem */
+    color: #6b4c3b; /* ciemny brąz */
+    font-size: 0.75rem;
+}

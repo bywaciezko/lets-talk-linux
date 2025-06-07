@@ -1,4 +1,8 @@
-import "../styles/Home.css";
+import "../styles/Layout.css";
+import "../styles/Content.css";
+import "../styles/Sidebar.css";
+import logo from "../images/LET.svg";
+
 import { useEffect, useState } from "react";
 import PostForm from "./PostForm";
 import PostList from "./PostList";
@@ -35,15 +39,11 @@ function CategoryManager({
     };
 
     return (
-        <div>
+        <div className="category-box">
             <h2>Categories</h2>
-            <ul>
+            <ul className="category-list">
                 <li
-                    style={{
-                        fontWeight:
-                            selectedCategory === "all" ? "bold" : "normal",
-                        cursor: "pointer",
-                    }}
+                    className={`category-item ${selectedCategory === "all" ? "active" : ""}`}
                     onClick={() => setSelectedCategory("all")}
                 >
                     All
@@ -51,11 +51,7 @@ function CategoryManager({
                 {categories.map((cat) => (
                     <li
                         key={cat}
-                        style={{
-                            fontWeight:
-                                selectedCategory === cat ? "bold" : "normal",
-                            cursor: "pointer",
-                        }}
+                        className={`category-item ${selectedCategory === cat ? "active" : ""}`}
                         onClick={() => setSelectedCategory(cat)}
                     >
                         {cat}
@@ -63,17 +59,18 @@ function CategoryManager({
                 ))}
             </ul>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="category-form">
                 <input
                     name="catName"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="New category"
+                    className="category-input"
                 />
-                <button>Add</button>
+                <button className="action-button">Add</button>
             </form>
 
-            {error && <p style={{ color: "red" }}>{error}</p>}
+            {error && <p className="login-error">{error}</p>}
         </div>
     );
 }
@@ -97,8 +94,13 @@ export default function Home({ user, onLogout }) {
     return (
         <div className="home-container">
             <div className="sidebar">
+                <img src={logo} alt="logo" className="logo" />
+                <hr className="divider" />
                 <p>Logged as: {user}</p>
-                <button onClick={onLogout}>Log out</button>
+                <button className="logout-button" onClick={onLogout}>
+                    Log out
+                </button>
+                <hr className="divider" />
                 <CategoryManager
                     categories={categories}
                     setCategories={setCategories}
@@ -108,9 +110,7 @@ export default function Home({ user, onLogout }) {
             </div>
 
             <div className="main">
-                <div className="topbar">
-                    <h1>Hello {user}!</h1>
-                </div>
+                <div className="greeting-box">Hello, {user}!</div>
 
                 <PostForm
                     user={user}

@@ -1,3 +1,4 @@
+import "./App.css";
 import { useState } from "react";
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -10,10 +11,14 @@ export default function App() {
     if (!user) {
         if (mode === "choose") {
             return (
-                <div>
-                    <h2>Welcome to I use Arch btw</h2>
-                    <button onClick={() => setMode("login")}>Log In</button>
-                    <button onClick={() => setMode("register")}>Sign Up</button>
+                <div className="login-container">
+                    <div className="login-box">
+                        <h2 className="element">Let's talk Linux together!</h2>
+                        <button onClick={() => setMode("login")}>Log In</button>
+                        <button onClick={() => setMode("register")}>
+                            Sign Up
+                        </button>
+                    </div>
                 </div>
             );
         }

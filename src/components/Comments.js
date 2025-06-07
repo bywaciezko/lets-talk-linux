@@ -31,22 +31,23 @@ export default function Comments({ postId, user }) {
     };
 
     return (
-        <div>
+        <div className="comments-box">
             <h4>Comments</h4>
-            <ul>
+            <ul className="comments-list">
                 {comments.map((c, i) => (
                     <li key={i}>
                         <strong>{c.author}:</strong> {c.content}
                     </li>
                 ))}
             </ul>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="comments-form">
                 <input
                     value={text}
                     onChange={(e) => setText(e.target.value)}
                     placeholder="Join a conversation"
+                    className="comment-input"
                 />
-                <button>Dodaj</button>
+                <button className="comment-button">Add</button>
             </form>
         </div>
     );
